@@ -1466,6 +1466,7 @@
     const panelEl = document.getElementById("programme-panel");
     const liveRegion = document.getElementById("live-region");
     const codeDialog = document.getElementById("code-dialog");
+    const codeClose = document.getElementById("code-close");
     const dialogCode = document.getElementById("dialog-code");
     const dialogName = document.getElementById("dialog-name");
     const dialogCategory = document.getElementById("dialog-category");
@@ -1729,8 +1730,7 @@
       if (trigger) openCode(trigger);
     });
 
-    /* A click anywhere in the overlay closes it. */
-    codeDialog.addEventListener("click", () => {
+    codeClose.addEventListener("click", () => {
       if (codeDialog.open) codeDialog.close();
     });
 
